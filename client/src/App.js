@@ -5,9 +5,9 @@ import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 
 // Pages
-import FeedbackForm from "./pages/feedbackForm";
-import Dashboard from "./pages/dashboard";
-import Layout from "./components/layout";
+import FeedbackForm from "./pages/feedbackForm/index.page";
+import Dashboard from "./pages/dashboard/index.page";
+import Layout from "./components/layout/index.component";
 
 function App() {
   return (

@@ -1,12 +1,19 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import {
+  AppContainer,
+  AppHeader,
+  HeaderTitle,
+  Nav,
+  AppMain,
+} from "./index.style";
 
 const Layout = () => {
   return (
-    <div className="app">
-      <header className="app-header">
-        <h1>User Feedback System</h1>
-        <nav>
+    <AppContainer>
+      <AppHeader>
+        <HeaderTitle>User Feedback System</HeaderTitle>
+        <Nav>
           <ul>
             <li>
               <Link to="/">Submit Feedback</Link>
@@ -15,13 +22,13 @@ const Layout = () => {
               <Link to="/dashboard">View Dashboard</Link>
             </li>
           </ul>
-        </nav>
-      </header>
+        </Nav>
+      </AppHeader>
 
-      <main className="app-main">
+      <AppMain>
         <Outlet />
-      </main>
-    </div>
+      </AppMain>
+    </AppContainer>
   );
 };
 
