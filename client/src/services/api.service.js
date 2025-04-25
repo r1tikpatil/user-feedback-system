@@ -33,4 +33,24 @@ export const getFeedback = async (params = {}) => {
   }
 };
 
+export const fetchAnalyticsData = async () => {
+  try {
+    const [overviewRes, keywordRes, userEngagementRes] = await Promise.all([
+      api.get("/analytics/overview"),
+      api.get("/analytics/keywords"),
+      api.get("/analytics/user-engagement"),
+    ]);
+
+    return {
+      overviewStats: overviewRes.data,
+      keywordData: keywordRes.data,
+      userEngagementData: userEngagementRes.data,
+    };
+  } catch (error) {
+    throw new Error(
+      error.response?.data?.message || "Failed to load analytics data"
+    );
+  }
+};
+
 export default api;

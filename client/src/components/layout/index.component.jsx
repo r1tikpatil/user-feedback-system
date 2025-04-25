@@ -21,6 +21,9 @@ const Layout = () => {
             <li>
               <Link to="/dashboard">View Dashboard</Link>
             </li>
+            <li>
+              <Link to="/analytics">View Analytics</Link>
+            </li>
           </ul>
         </Nav>
       </AppHeader>

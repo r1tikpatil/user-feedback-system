@@ -15,6 +15,7 @@ export const AppHeader = styled.header`
   justify-content: space-between;
   position: sticky;
   top: 0;
+  z-index: 1000;
 
   @media (max-width: 768px) {
     flex-direction: column;

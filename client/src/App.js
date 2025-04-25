@@ -7,6 +7,7 @@ import "./App.css";
 // Pages
 import FeedbackForm from "./pages/feedbackForm/index.page";
 import Dashboard from "./pages/dashboard/index.page";
+import Analytics from "./pages/analytics/index.page";
 import Layout from "./components/layout/index.component";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<FeedbackForm />} />
           <Route path="dashboard" element={<Dashboard />} />
+          <Route path="analytics" element={<Analytics />} />
         </Route>
       </Routes>
 
