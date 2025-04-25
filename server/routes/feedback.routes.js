@@ -7,9 +7,9 @@ const {
 } = require("../controllers/feedback.controller");
 
 // Submit feedback
-router.post("/feedback", validateFeedback, addFeedback);
+router.post("", validateFeedback, addFeedback);
 
 // Get all feedback with filtering and sorting
-router.get("/feedback", getAllFeedback);
+router.get("", getAllFeedback);
 
 module.exports = router;

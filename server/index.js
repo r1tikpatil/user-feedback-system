@@ -4,6 +4,7 @@ const express = require("express");
 const cors = require("cors");
 
 const feedbackRoutes = require("./routes/feedback.routes");
+const analyticsRoutes = require("./routes/analytics.routes");
 
 const app = express();
 
@@ -12,7 +13,8 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use("/api", feedbackRoutes);
+app.use("/api/feedback", feedbackRoutes);
+app.use("/api/analytics", analyticsRoutes);
 
 // Error handler
 app.use((err, req, res, next) => {

@@ -55,8 +55,6 @@ user-feedback-system/
 - **npm** or **yarn**
 - **MongoDB** (local or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas))
 
----
-
 ### 🔧 Installation
 
 1. Clone the repository:
